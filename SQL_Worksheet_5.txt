@@ -1,0 +1,34 @@
+Question Number, Answer
+
+1>Answer: select * from movie;
+
+2>Answer: select titel,max(runtime) from movie;
+
+3>Answer: select max(revenue),title from movie;
+
+4>Answer: select title,max(budget) from movie;
+
+5>Answer: select titel, person_name,gender,character_name,cast_order
+          from movie JOIN movie_cast ON movie_cat.movie_id=movie.movie_id
+          JOIN gender ON movie_cast.gender_id=gender.gender_id
+          JOIN person ON movie_cast.person_id=person.person_id;
+
+6>Answer: select country_name 
+
+7>Answer: select * from gender;
+
+8>Answer: select language_name,  
+
+10>Answer: select titel, popularaity from movie ORDER BY popularity;
+
+11>Answer: select titel, revenue from movei m1 where 3-1=(select COUNT(DISTINCT revenue) from movie m2
+           where m1.revenue > m2.revenue;
+
+12>Answer: select title from movie where movie_status="rumoured";
+
+13>Answer: select 
+
+14>Answer: select movie_id,movie_company from movie_company RIGHT JOIN movie_company.movie_id=production_company;
+
+15>Answer: select titel,budget,release_date,revenue,runtime,vote_average from movie 
+           ORDER BY budget DESC;	
